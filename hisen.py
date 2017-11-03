@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 from tqdm import tqdm
 
-import numpy as np			 #結果表示に使う
+import numpy as np     #結果表示に使いました。
 
 
 #############################################
@@ -20,7 +20,7 @@ import numpy as np			 #結果表示に使う
 
 ################## domein ###################
 
-#       一次精度
+#        一次精度
 
 _ryki = 8
 
@@ -82,6 +82,7 @@ for n in range(times):
 #       線形の計算法から非線形の計算法へ
 
 #       cmpute uc and um and up
+
         uc = u[j]
         um = u[j - 1]
         up = u[j + 1]
