@@ -159,7 +159,7 @@ for count in tqdm(range(times + 1)):
 #三次精度ｘ軸
 	x3 = [j - _sen * 2 for j in range(_sen * 2 * 2 * 2 -2)]#x軸の値の設定x =-12~11
 	for j in range(_sen * 2 * 2 - 1):
-		x3[j * 2] = x2[j] 
+		x3[j * 2] = x2[j]
 		x3[j * 2 + 1] = (x2[j] + x2[j + 1]) * 0.5
 	if seido == 3:
 		print("x3: "+str(x3))
@@ -168,7 +168,7 @@ for count in tqdm(range(times + 1)):
 	when sen = 6
 	0   1   2  3  4   5      6     7 8...     12
 
-	0  12 3 4 567 89  10 11  12               24             
+	0  12 3 4 567 89  10 11  12               24
 
 	-6 -5  -4  -3 -2 -1      0                 6      x軸(j-sen)　
 	"""
@@ -181,8 +181,8 @@ for count in tqdm(range(times + 1)):
 #sl is going to be used when show right answer
 	sl = [[0 for j in range(_sen*2)] for i in range(_sen)]
 	for i in range(_sen):
-	  for j in range(_sen):
-		  sl[i][j]= 1
+	  	for j in range(_sen):
+		 	 sl[i][j]= 1
 
 #２次元配列であるstの０行目を１次元配列に直し、y1としてプロットする
 #一次精度
@@ -288,6 +288,7 @@ for count in tqdm(range(times + 1)):
 
 	print("クーラン数:"+str(v))
 
+
 #y1を初期値にもどす。
 	for j in range (_sen*2):
 		y1[j]=st[0][j]
@@ -323,7 +324,7 @@ for count in tqdm(range(times + 1)):
 		break
 #123567（ただのメモ）
 #654310
-#1 2 3 4 5 6 7 8 
+#1 2 3 4 5 6 7 8
 # 910111213141516
 
 

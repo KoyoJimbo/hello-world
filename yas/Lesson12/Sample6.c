@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+    char str[100];
+
+    printf("文字列を入力して下さい。\n");
+    fgets(str, 100,stdin);
+    str[strlen(str)-1] = '\0';
+    printf("入力した文字列は%sです。\n",str);
+
+    return 0;
+}
